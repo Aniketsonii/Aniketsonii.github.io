@@ -14,23 +14,70 @@ h1{
 .navbar{
     position: fixed;
     top: 50%;
+    /* left: 100.5%; */
     left: 98%;
+    line-height: 2.1;
     transform: translate(-50%,-50%);
-
+    cursor: pointer;
+    direction: rtl;
+    color:rgb(255, 119, 0);
 }
-.app-header {
+.nav{
+    padding-left: 70px;
+    padding-right: 100px;
+    line-height: 1.3;
+    font-size: 30px;
+}
+.aniket {
+    font-family: 'Braah One', sans-serif;
     text-align: center;
     font-size: calc(100px + 5vmin);
-    color: rgb(250, 143, 50);
+    color: rgb(255, 119, 0);
+    text-shadow: 4px 4px black;
+    white-space: nowrap;
+    height: 140px;
+  }
+
+.aniket-tag{
+    color: rgb(253, 253, 253);
+    height: 60px;
+    font-size: xx-large;
     text-shadow: 4px 4px black;
   }
 
-.hero-section{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('images/1st-section.jpeg');
+.my-button{
+    border-radius: 50px;
+    /* display: none; */
+    transition: 0.2s;
+    color:black;
+    background-color: rgb(255, 119, 0);;
+    width: 120px;
+    height: 30px;
+    font-size: medium;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+li > a >.my-button{
+    display: none;
+}
+ul:hover .my-button {
+    display: inline-block;
+    /* left: -100px; */
+    margin-top: 5px;
+    position:absolute;
+  }
+.my-button:hover{
+    color: rgb(255, 119, 0);
+    border: 1px solid rgb(255, 119, 0) !important;
+    background-color: black;
+}
+.welcome{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url('images/1st-section.jpeg');
     background-size: cover;
     min-height: 100vh;
   }
-.details{
+.aboutMe{
     background-color: aqua;
     text-align: center;
     height: 100vh;
