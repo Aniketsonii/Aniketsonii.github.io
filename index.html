@@ -16,25 +16,30 @@
 
 <body>
     <section id="header">
-        <nav id="navbar" class="navbar">
-            <ul class="nav">
-                <li><a href="#Welcome"><button class="my-button">Home</button></a></li>
-                <li><a href="#AboutMe"><button class="my-button">About Me</button></a></li>
-                <li><a href="#Projects"><button class="my-button">Projects</button></a></li>
-                <li><a href="#Photography"><button class="my-button">Photography</button></a></li>
-                <li><a href="#Contact"><button class="my-button">Contact Me</button></a></li>
-            </ul>
-        </nav>
+        <nav class="navbar">
+            <div class="aniket">
+              ANIKET SONI
+            </div>
+            <div class="navbar-right">
+              <div class="button-group">
+                <a href="#Welcome"><button>Welcome</button></a>
+                <a href="#AboutMe"><button>About Me</button></a>
+                <a href="#Projects"><button>Projects</button></a>
+                <a href="#Photography"><button>Photography</button></a>
+                <a href="#Contact"><button>Contact Me</button></a>
+              </div>
+            </div>
+          </nav>          
     </section>
-    <section id="Welcome" class="welcome">
+    <section id="Welcome" class="bg-image">
         <div class="center">
             <h6 class="aniket">ANIKET SONI</h6>
-            <div class="under-line"></div>
+            <!-- <div class="under-line"></div> -->
             <h6 class="aniket-tag">i'm Programmer / Developer / Ethical Hacker</h6>
             <a href="#AboutMe"><button class="my-button">About Me</button></a>
         </div>
     </section>
-    <section id="AboutMe" class="aboutMe">
+    <section id="AboutMe" class="aboutMe bg-image">
         <h4>About Me</h4>
         <div class="under-line"></div>
         <div class="flex">
@@ -89,7 +94,7 @@
         </div>
         </div>
     </section>
-    <section id="Projects" class="projects">
+    <section id="Projects" class="projects bg-image">
         <h4>Projects</h4>
         <div class="under-line"></div>
         <div class="flex">
@@ -146,14 +151,14 @@ Our car price prediction ML assignment employs linear regression to develop an a
             </div>
         </div>
     </section>
-    <section id="Photography" class="Photography">
+    <section id="Photography" class="Photography bg-image">
         <h4>Photography</h4>
         <div class="under-line"></div>
         <div class="content">
         <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
         </div>
     </section>
-    <section id="Contact" class="contact">
+    <section id="Contact" class="contact bg-image">
         <h4>Contact Me</h4>
         <div class="under-line"></div>
         <div class="flex">
@@ -167,25 +172,27 @@ Our car price prediction ML assignment employs linear regression to develop an a
                     <label for="subject">Subject</label><br>
                     <input type="text" name="subject" id="subject" required="" placeholder="Let's talk about?" maxlength="10  0"><br>
                     <label for="message">Message</label><br>
-                    <textarea type="text" name="message" id="message" required="" placeholder="woah! that's Awsome, more about it" rows="10"cols="30" maxlength="600"></textarea><br>
+                    <textarea type="text" name="message" id="message" required="" placeholder="woah! that's Awsome, more about it" rows="6"cols="30" maxlength="600"></textarea><br>
                     <input type="submit" value="Submit">
                 </fieldset>
             </form>
         </div>
+    </section>
+    <section id="footer">
+        <div class="links">
+            <ul class="sub-Link">
+                <li><a href="https://linkedin.com/in/aniketsonii">LinkedIn</a></li>
+                <li><a href="https://github.com/Aniketsonii"> Github</a></li>
+            </ul>
+            <ul class="">
+                <li><a href="https://www.instagram.com/visionsofaniket"> VisionsofAniket</a></li>
+                <li><a href="https://www.hackerrank.com/aniketsoni760"> HackerRank</a></li>
+            </ul>
+        </div>
         <div>
-            hsdhd   
+            <h1 style="text-align: center;">Made With ❤️ by Aniket</h1>
         </div>
     </section>
     <script src="script.js"></script>
 </body>
-
-
-<script type="text/javascript">
-    /* curator-feed-default-feed-layout */
-    (function () {
-        var i, e, d = document, s = "script"; i = d.createElement("script"); i.async = 1; i.charset = "UTF-8";
-        i.src = "https://cdn.curator.io/published/83f6934d-7471-47e2-a31c-1d67ff64f2fe.js";
-        e = d.getElementsByTagName(s)[0]; e.parentNode.insertBefore(i, e);
-    })();
-</script>
 </html>
