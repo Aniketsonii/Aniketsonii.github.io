@@ -15,6 +15,6 @@ window.onscroll = function () { scrollFunction() };
         } else {
             document.getElementById("header").style.visibility = "hidden";
             document.getElementById("header").style.opacity = "0";
-            document.getElementById("header").style.transition = "none";
+            document.getElementById("header").style.transition = "opacity 0.5s ease-out";
         }
     }
