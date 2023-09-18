@@ -1,35 +1,17 @@
-window.addEventListener("load", function () {
-    const mainScreen = document.querySelector(".main");
-    const cinematic = document.getElementById("cinematic");
-    mainScreen.style.display = "block";
-  
-    // Hide the loading screen when the page is fully loaded
-    setTimeout(() => {
-      const loadingScreen = document.querySelector(".loader-container");
-      const cinematic_border = document.querySelector(".cinematic-border");
-      loadingScreen.style.opacity = 0;
-      mainScreen.style.opacity = 1;
-      setTimeout(() => {
-        cinematic.classList.remove("cinematic-border");
-        loadingScreen.style.display = "none";
-      }, 1000); // 1.5 secs
-    }, 1000); // 3000 milliseconds (3 seconds)
-  });
 
-
-//loader function
-const myElement = document.querySelector("#os-phrases > h2");
-myElement.lettering("words");
-myElement.style.opacity = 1;
-Object.values(myElement.children)
-  .map((i) => {
-    i.lettering();
-    return i;
-  })
-  .map((i) => {
-    i.lettering();
-    return i;
-  });
+// //loader function
+// const myElement = document.querySelector("#os-phrases > h2");
+// myElement.lettering("words");
+// myElement.style.opacity = 1;
+// Object.values(myElement.children)
+//   .map((i) => {
+//     i.lettering();
+//     return i;
+//   })
+//   .map((i) => {
+//     i.lettering();
+//     return i;
+//   });
 
 
 (function () {
@@ -61,7 +43,25 @@ function scrollFunction() {
   } else {
     document.getElementById("header").style.visibility = "hidden";
     document.getElementById("header").style.opacity = "0";
-    document.getElementById("header").style.transition =
-      "opacity 0.5s ease-out";
+    document.getElementById("header").style.transition = "opacity 0.5s ease-out";
   }
 }
+
+window.addEventListener("load", function () {
+  const mainScreen = document.querySelector(".main");
+  const cinematic = document.getElementById("cinematic");
+  // mainScreen.style.display = "block";
+  // Hide the loading screen when the page is fully loaded
+  setTimeout(() => {
+    const loadingScreen = document.querySelector(".loader-container");
+    // const cinematic_border = document.querySelector(".cinematic-border");
+    document.querySelector(".os-phrases > h2").style.zIndex = 1
+    loadingScreen.style.opacity = 0;
+    mainScreen.style.opacity = 1;
+    cinematic.classList.remove("cinematic-border");
+    setTimeout(() => {
+      loadingScreen.style.display = "none";
+      mainScreen.style.display = "block";
+    }, 1200); // 1.5 secs
+  }, 1200); // 3000 milliseconds (3 seconds)
+});

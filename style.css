@@ -1,8 +1,10 @@
 .center {
-    text-align: center;
-    position: sticky;
-    top: 50%;
-    transform: translateY(-50%);
+  text-align: center;
+  position: absolute;
+  top: 70%;
+  text-wrap: nowrap;
+  transform: translateY(-70%) translateX(-50%);
+  left: 50%;
 }
 
 .bg-image{
@@ -31,9 +33,12 @@
 }
 
 .cinematic-border{
+  position: relative;
   border-top: 100px solid black;
   min-height: 100vh;
   border-bottom: 100px solid black;
+  opacity: 1;
+  transition: opacity ease-in-out 700ms;
 }
 
 .flex{
