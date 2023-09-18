@@ -2,6 +2,66 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="./loader.css">
+    <style>
+          .loader-container{
+            display: block;
+            opacity: 1;
+            transition: opacity ease-in-out 700ms;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url('images/1st-section.jpeg');
+          }
+          
+          .css-waves {
+            position: relative;
+            width: 100%;
+            /* margin-bottom: -7px; */
+            position: fixed;
+            bottom: 0;
+            height: 60%;
+            /* min-height: 100vh; */
+            /* max-height: 150px;*/
+          }
+          
+          /* Here we declare the SVG node that we wish to animate. */
+          .animated-waves{
+            z-index: -1;
+          }
+          
+          .animated-waves > use {
+            animation: infinite-waves 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+          }
+          .animated-waves > use:nth-child(1) {
+            animation-delay: -2s;
+            animation-duration: 7s;
+          }
+          .animated-waves > use:nth-child(2) {
+            animation-delay: -3s;
+            animation-duration: 10s;
+          }
+          .animated-waves > use:nth-child(3) {
+            animation-delay: -4s;
+            animation-duration: 13s;
+          }
+          .animated-waves > use:nth-child(4) {
+            animation-delay: -5s;
+            animation-duration: 20s;
+          }
+          @keyframes infinite-waves {
+            0% {
+              transform: translate3d(-90px, 0, 0);
+            }
+            100% {
+              transform: translate3d(85px, 0, 0);
+            }
+          }
+          /* Mobile Optimization */
+          @media (max-width: 768px) {
+            .css-waves {
+              height: 40px;
+              min-height: 40px;
+            }
+          }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,189 +70,221 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Braah+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <section id="header">
-        <nav class="navbar">
-            <div class="aniket">
-              ANIKET SONI
-            </div>
-            <div class="navbar-right">
-              <div class="button-group">
-                <a href="#Welcome"><button>Welcome</button></a>
-                <a href="#AboutMe"><button>About Me</button></a>
-                <a href="#Projects"><button>Projects</button></a>
-                <a href="#Photography"><button>Photography</button></a>
-                <a href="#Contact"><button>Contact Me</button></a>
-              </div>
-            </div>
-          </nav>          
-    </section>
-    <section id="Welcome" class="bg-image">
-        <div class="center">
-            <h6 class="aniket">ANIKET SONI</h6>
-            <!-- <div class="under-line"></div> -->
-            <h6 class="aniket-tag">i'm Programmer / Developer / Ethical Hacker</h6>
-            <a href="#AboutMe"><button class="my-button">About Me</button></a>
+    <div id="cinematic" class="cinematic-border">
+        <div class="os-phrases" id="os-phrases" style="z-index: 1000;">
+            <h2>ANIKET SONI</h2>
         </div>
-    </section>
-    <section id="AboutMe" class="aboutMe bg-image">
-        <h4>About Me</h4>
-        <div class="under-line"></div>
-        <div class="flex">
-            <div class="grid-container">
-                <div class="item0">
-                    <p>An enthusiastic, self-motivated, reliable and hard-working student. Mature team worker and adaptable
-                        to all challenging situations. Can work well both in a team environment as well as using own
-                        initiative. Can work well under pressure and adhere to strict deadlines.</p>
-                    <h4>Languages Known</h4>
-                    <p>- English <br>- Hindi <br>- Telugu</p>
+        <div class="loader-container">
+        <!-- <div class="os-phrases" id="os-phrases">
+            <h2>ANIKET SONI</h2>
+        </div> -->
+        <svg
+          class="css-waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="wave-pattern"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            ></path>
+          </defs>
+          <g class="animated-waves">
+            <use href="#wave-pattern" x="48" y="0" fill="rgba(21,0,36,0.6)"></use>
+            <use href="#wave-pattern" x="48" y="3" fill="rgba(21,0,36,0.5)"></use>
+            <use href="#wave-pattern" x="48" y="5" fill="rgba(21,0,36,0.3)"></use>
+            <use href="#wave-pattern" x="48" y="7" fill="rgba(21,0,36,0.3)"></use>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <main class="main">
+        <section id="header">
+            <nav class="navbar">
+                <div class="aniket">
+                  ANIKET SONI
                 </div>
-                <div class="item1">
-                    <h5>Education<div class="under-line"></div>
-                    </h5>
-                    <p>
-                        Gurunanak Institutions(2018-2022)
-                        • B.Tech in Computer Science
-    
-                        St.Mary's Jr College(2016-2018)
-                        • MPC(Mathematics,Physics,Chemistry)
-    
-                        HVS Public School(2016-2018)
-                        • CBSE
+                <div class="navbar-right">
+                  <div class="button-group">
+                    <a href="#Welcome"><button><span class="text">Welcome</span></button></a>
+                    <a href="#AboutMe"><button><span class="text">About Me</span></button></a>
+                    <a href="#Projects"><button><span class="text">Projects</span></button></a>
+                    <a href="#Photography"><button><span class="text">Photography</span></button></a>
+                    <a href="#Contact"><button><span class="text">Contact Me</span></button></a>
+                  </div>
+                </div>
+              </nav>          
+        </section>
+        <section id="Welcome" class="bg-image">
+            <div class="center">
+                <h6 style="visibility: hidden;" class="aniket">a</h6>
+                <h6 class="aniket-tag">I'M PROGRAMMER / DEVELOPER / ETHICAL HACKER</h6>
+                <a href="#AboutMe"><button class="my-button">About Me</button></a>
+            </div>
+        </section>
+        <section id="AboutMe" class="aboutMe bg-image">
+            <h4>About Me</h4>
+            <div class="under-line"></div>
+            <div class="flex">
+                <div class="grid-container">
+                    <div class="item0">
+                        <p>An enthusiastic, self-motivated, reliable and hard-working student. Mature team worker and adaptable
+                            to all challenging situations. Can work well both in a team environment as well as using own
+                            initiative. Can work well under pressure and adhere to strict deadlines.</p>
+                        <h4>Languages Known</h4>
+                        <p>- English <br>- Hindi <br>- Telugu</p>
+                    </div>
+                    <div class="item1">
+                        <h5>Education<div class="under-line"></div>
+                        </h5>
+                        <p>
+                            Gurunanak Institutions(2018-2022)
+                            • B.Tech in Computer Science
+        
+                            St.Mary's Jr College(2016-2018)
+                            • MPC(Mathematics,Physics,Chemistry)
+        
+                            HVS Public School(2016-2018)
+                            • CBSE
+                        </p>
+                    </div>
+                    <div class="item2">
+                        <h5>Skills</h5>
+                        <div class="under-line"></div>
+                        <p>
+                            • JAVA
+        
+                            • PYTHON
+        
+                            • WEB DEVELOPMENT
+        
+                            • ETHICAL HACKING
+                        </p>
+                    </div>
+                    <div class="item3">
+                        <h5>Photography</h5>
+                        <div class="under-line"></div>
+                        <p>
+                            Photography is so much more than just taking pictures. <br> It develops conceptual skills and technical expertise, <br> but also teaches how to collaborate with others</p>
+                    </div>
+                    <div class="item4">
+                        <h5>Music Production</h5>
+                        <div class="under-line"></div>
+                        <p>
+                            Music is capable of raising states of consciousness, <br> changing your mood, developing brain, lowering stress levels and <br> accessing different states of the mind</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="Projects" class="projects bg-image">
+            <h4>Projects</h4>
+            <div class="under-line"></div>
+            <div class="flex">
+                <div class="project-tile">
+                    <h5 class="tile-child1">Car Price Prediction<div class="under-line"></div></h5>
+                    <img class="project-img tile-child2" src="/images/car-price.jpeg" alt="Ecommerce Website project snapshot">
+                    <p class="tile-child3">
+                       
+    Our car price prediction ML assignment employs linear regression to develop an accurate model that estimates vehicle prices based on relevant features and historical data, enabling users to make informed decisions in the automotive market.
                     </p>
+                    <div class="btns tile-child4">
+                        <a href="http://ec2-15-207-112-251.ap-south-1.compute.amazonaws.com" target="_blank">Demo</a>
+                        <a href="https://github.com/Aniketsonii/Car-Price-Prediction" target="_blank">Github</a>
+                        <a href="https://github1s.com/aadarshp31/Ecommerce-MERN-stack" target="_blank">Code</a>
+                    </div>
                 </div>
-                <div class="item2">
-                    <h5>Skills</h5>
-                    <div class="under-line"></div>
-                    <p>
-                        • JAVA
-    
-                        • PYTHON
-    
-                        • WEB DEVELOPMENT
-    
-                        • ETHICAL HACKING
+                <div class="project-tile">
+                    <h5 class="tile-child1">License Plate Detection<div class="under-line"></div></h5>
+                    <img class="project-img tile-child2" src="/images/1.png" alt="Ecommerce Website project snapshot">
+                    <p class="tile-child3">
+                        License Plate Detection Methods Based on OpenCV explores the use of OpenCV to implement robust techniques for identifying and localizing license plates in images, enabling various applications in traffic management, security systems.
                     </p>
+                    <div class="btns tile-child4">
+                        <a href="http://ec2-15-207-112-251.ap-south-1.compute.amazonaws.com" target="_blank">Demo</a>
+                        <a href="https://github.com/Aniketsonii/Car-Price-Prediction" target="_blank">Github</a>
+                        <a href="https://github1s.com/aadarshp31/Ecommerce-MERN-stack" target="_blank">Code</a>
+                    </div>
                 </div>
-                <div class="item3">
-                    <h5>Photography</h5>
-                    <div class="under-line"></div>
-                    <p>
-                        Photography is so much more than just taking pictures. <br> It develops conceptual skills and technical expertise, <br> but also teaches how to collaborate with others</p>
+                <div class="project-tile">
+                    <h5 class="tile-child1">Car Price Prediction<div class="under-line"></div></h5>
+                    <img class="project-img tile-child2" src="/images/car-price.jpeg" alt="Ecommerce Website project snapshot">
+                    <p class="tile-child3">
+                       
+    Our car price prediction ML assignment employs linear regression to develop an accurate model that estimates vehicle prices based on relevant features and historical data, enabling users to make informed decisions in the automotive market.
+                    </p>
+                    <div class="btns tile-child4">
+                        <a href="http://ec2-15-207-112-251.ap-south-1.compute.amazonaws.com" target="_blank">Demo</a>
+                        <a href="https://github.com/Aniketsonii/Car-Price-Prediction" target="_blank">Github</a>
+                        <a href="https://github1s.com/aadarshp31/Ecommerce-MERN-stack" target="_blank">Code</a>
+                    </div>
                 </div>
-                <div class="item4">
-                    <h5>Music Production</h5>
-                    <div class="under-line"></div>
-                    <p>
-                        Music is capable of raising states of consciousness, <br> changing your mood, developing brain, lowering stress levels and <br> accessing different states of the mind</p>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <section id="Projects" class="projects bg-image">
-        <h4>Projects</h4>
-        <div class="under-line"></div>
-        <div class="flex">
-            <div class="project-tile">
-                <h5 class="tile-child1">Car Price Prediction<div class="under-line"></div></h5>
-                <img class="project-img tile-child2" src="/images/car-price.jpeg" alt="Ecommerce Website project snapshot">
-                <p class="tile-child3">
-                   
-Our car price prediction ML assignment employs linear regression to develop an accurate model that estimates vehicle prices based on relevant features and historical data, enabling users to make informed decisions in the automotive market.
-                </p>
-                <div class="btns tile-child4">
-                    <a href="http://ec2-15-207-112-251.ap-south-1.compute.amazonaws.com" target="_blank">Demo</a>
-                    <a href="https://github.com/Aniketsonii/Car-Price-Prediction" target="_blank">Github</a>
-                    <a href="https://github1s.com/aadarshp31/Ecommerce-MERN-stack" target="_blank">Code</a>
-                </div>
-            </div>
-            <div class="project-tile">
-                <h5 class="tile-child1">License Plate Detection<div class="under-line"></div></h5>
-                <img class="project-img tile-child2" src="/images/1.png" alt="Ecommerce Website project snapshot">
-                <p class="tile-child3">
-                    License Plate Detection Methods Based on OpenCV explores the use of OpenCV to implement robust techniques for identifying and localizing license plates in images, enabling various applications in traffic management, security systems.
-                </p>
-                <div class="btns tile-child4">
-                    <a href="http://ec2-15-207-112-251.ap-south-1.compute.amazonaws.com" target="_blank">Demo</a>
-                    <a href="https://github.com/Aniketsonii/Car-Price-Prediction" target="_blank">Github</a>
-                    <a href="https://github1s.com/aadarshp31/Ecommerce-MERN-stack" target="_blank">Code</a>
+                <div class="project-tile">
+                    <h5 class="tile-child1">Car Price Prediction<div class="under-line"></div></h5>
+                    <img class="project-img tile-child2" src="/images/car-price.jpeg" alt="Ecommerce Website project snapshot">
+                    <p class="tile-child3">
+                       
+    Our car price prediction ML assignment employs linear regression to develop an accurate model that estimates vehicle prices based on relevant features and historical data, enabling users to make informed decisions in the automotive market.
+                    </p>
+                    <div class="btns tile-child4">
+                        <a href="http://ec2-15-207-112-251.ap-south-1.compute.amazonaws.com" target="_blank">Demo</a>
+                        <a href="https://github.com/Aniketsonii/Car-Price-Prediction" target="_blank">Github</a>
+                        <a href="https://github1s.com/aadarshp31/Ecommerce-MERN-stack" target="_blank">Code</a>
+                    </div>
                 </div>
             </div>
-            <div class="project-tile">
-                <h5 class="tile-child1">Car Price Prediction<div class="under-line"></div></h5>
-                <img class="project-img tile-child2" src="/images/car-price.jpeg" alt="Ecommerce Website project snapshot">
-                <p class="tile-child3">
-                   
-Our car price prediction ML assignment employs linear regression to develop an accurate model that estimates vehicle prices based on relevant features and historical data, enabling users to make informed decisions in the automotive market.
-                </p>
-                <div class="btns tile-child4">
-                    <a href="http://ec2-15-207-112-251.ap-south-1.compute.amazonaws.com" target="_blank">Demo</a>
-                    <a href="https://github.com/Aniketsonii/Car-Price-Prediction" target="_blank">Github</a>
-                    <a href="https://github1s.com/aadarshp31/Ecommerce-MERN-stack" target="_blank">Code</a>
-                </div>
+        </section>
+        <section id="Photography" class="Photography bg-image">
+            <h4>Photography</h4>
+            <div class="under-line"></div>
+            <div class="content">
+            <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
             </div>
-            <div class="project-tile">
-                <h5 class="tile-child1">Car Price Prediction<div class="under-line"></div></h5>
-                <img class="project-img tile-child2" src="/images/car-price.jpeg" alt="Ecommerce Website project snapshot">
-                <p class="tile-child3">
-                   
-Our car price prediction ML assignment employs linear regression to develop an accurate model that estimates vehicle prices based on relevant features and historical data, enabling users to make informed decisions in the automotive market.
-                </p>
-                <div class="btns tile-child4">
-                    <a href="http://ec2-15-207-112-251.ap-south-1.compute.amazonaws.com" target="_blank">Demo</a>
-                    <a href="https://github.com/Aniketsonii/Car-Price-Prediction" target="_blank">Github</a>
-                    <a href="https://github1s.com/aadarshp31/Ecommerce-MERN-stack" target="_blank">Code</a>
-                </div>
+        </section>
+        <section id="Contact" class="contact bg-image">
+            <h4>Contact Me</h4>
+            <div class="under-line"></div>
+            <div class="flex">
+                <form id="contact-form" method="POST" data-email="Aniket.soni.760@gmail.com" action="" style="color: aliceblue;">
+                    <fieldset>
+                        <!-- <legend>Get in touch</legend> -->
+                        <label for="name">Name</label><br>
+                        <input type="text" name="name" id="name" required="" placeholder="What's your name?" maxlength="20"><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email" required="" placeholder="What's your mail?" pattern="^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$" maxlength="30"><br>
+                        <label for="subject">Subject</label><br>
+                        <input type="text" name="subject" id="subject" required="" placeholder="Let's talk about?" maxlength="10  0"><br>
+                        <label for="message">Message</label><br>
+                        <textarea type="text" name="message" id="message" required="" placeholder="woah! that's Awsome, more about it" rows="6"cols="30" maxlength="600"></textarea><br>
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
             </div>
-        </div>
-    </section>
-    <section id="Photography" class="Photography bg-image">
-        <h4>Photography</h4>
-        <div class="under-line"></div>
-        <div class="content">
-        <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
-        </div>
-    </section>
-    <section id="Contact" class="contact bg-image">
-        <h4>Contact Me</h4>
-        <div class="under-line"></div>
-        <div class="flex">
-            <form id="contact-form" method="POST" data-email="Aniket.soni.760@gmail.com" action="" style="color: aliceblue;">
-                <fieldset>
-                    <!-- <legend>Get in touch</legend> -->
-                    <label for="name">Name</label><br>
-                    <input type="text" name="name" id="name" required="" placeholder="What's your name?" maxlength="20"><br>
-                    <label for="email">Email</label><br>
-                    <input type="email" name="email" id="email" required="" placeholder="What's your mail?" pattern="^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$" maxlength="30"><br>
-                    <label for="subject">Subject</label><br>
-                    <input type="text" name="subject" id="subject" required="" placeholder="Let's talk about?" maxlength="10  0"><br>
-                    <label for="message">Message</label><br>
-                    <textarea type="text" name="message" id="message" required="" placeholder="woah! that's Awsome, more about it" rows="6"cols="30" maxlength="600"></textarea><br>
-                    <input type="submit" value="Submit">
-                </fieldset>
-            </form>
-        </div>
-    </section>
-    <section id="footer">
-        <div class="links">
-            <ul class="sub-Link">
-                <li><a href="https://linkedin.com/in/aniketsonii" target="_blank">LinkedIn</a></li>
-                <li><a href="https://github.com/Aniketsonii" target="_blank"> Github</a></li>
-            </ul>
-            <ul class="">
-                <li><a href="https://www.instagram.com/visionsofaniket" target="_blank"> VisionsofAniket</a></li>
-                <li><a href="https://www.hackerrank.com/aniketsoni760" target="_blank"> HackerRank</a></li>
-            </ul>
-        </div>
-        <div>
-            <h1 style="text-align: center;">Made With ❤️ by Aniket</h1>
-        </div>
-    </section>
+        </section>
+        <section id="footer">
+            <div class="links">
+                <ul class="sub-Link">
+                    <li><a href="https://linkedin.com/in/aniketsonii" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/Aniketsonii" target="_blank"> Github</a></li>
+                </ul>
+                <ul class="">
+                    <li><a href="https://www.instagram.com/visionsofaniket" target="_blank"> VisionsofAniket</a></li>
+                    <li><a href="https://www.hackerrank.com/aniketsoni760" target="_blank"> HackerRank</a></li>
+                </ul>
+            </div>
+            <div>
+                <h1 style="text-align: center;">Made With ❤️ by Aniket</h1>
+            </div>
+        </section>
+    </main>
+    <script src="loader.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

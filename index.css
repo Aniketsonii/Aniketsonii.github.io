@@ -1,11 +1,27 @@
 :root{
+  font-family: 'Raleway';
   scroll-behavior: smooth;
+  --purple: rgb(130, 0, 217);
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url('images/1st-section.jpeg');
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  /* background: linear-gradient(155deg, rgba(59,11,90,1) 20%, rgba(117,30,175,1) 48%, rgba(86,4,139,1) 76%); */
+}
+
+.main{
+  display: none;
+  opacity : 0;
+  transition: opacity ease-in-out 700ms;
 }
 
 body {
-  font-family: Helvetica;
+  font-family: 'Raleway';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ff6a00;
+  /* height: 100vh; */
+  /* background-color: rgb(55,5,88); */
+  /* background: linear-gradient(167deg, rgba(55,5,88,1) 20%, rgba(117,30,175,1) 48%, rgba(86,4,139,1) 76%); */
   margin: 0px;
 }
