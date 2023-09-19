@@ -17,8 +17,6 @@
   transition: 0.2s;
   color: black;
   background-color: var(--purple);
-  width: 10%;
-  height: 30px;
   font-size: medium;
   font-weight: 100;
   border: none;
@@ -92,6 +90,7 @@ p {
   padding: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .button-group {
@@ -196,22 +195,13 @@ button span {
   text-wrap: nowrap; */
 /* } */
 
-.navbar-left{
-  font-size: larger;
-  font-weight: 100;
-  font-family: 'Braah One', sans-serif;
-}
 
-nav > div{
-  margin: 0;
-}
 #header .aniket{position: relative;
-/* font-family: 'Braah One', sans-serif; */
 text-align: center;
-/* font-size: 135%; */
-font-weight: 600 ;
+font-weight: 700 ;
 margin: 0px;
 color:black;
+top: 4px;
 text-shadow: none;
 white-space: nowrap;
 font-size: 200%;
@@ -219,24 +209,13 @@ line-height: 30px;
 }
 
 #header .aniket::first-letter{
-  color: black;
-  font-size: inherit;
-
+  color: rgb(255, 255, 255);
+  font-size: 150%;
 }
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- Header end */
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- Home page Start */
 #Welcome {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url('images/1st-section.jpeg');
-}
-
-.aniket {
-    position: relative;
-    text-align: center;
-    font-weight: 700 ;
-    font-size: calc(100px + 5vmin);
-    color: var(--purple);
-    text-shadow: 4px 4px black;
-    white-space: nowrap;
 }
 
 .aniket::first-letter{

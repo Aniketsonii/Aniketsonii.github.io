@@ -57,11 +57,11 @@ window.addEventListener("load", function () {
     // const cinematic_border = document.querySelector(".cinematic-border");
     document.querySelector(".os-phrases > h2").style.zIndex = 1
     loadingScreen.style.opacity = 0;
-    mainScreen.style.opacity = 1;
     cinematic.classList.remove("cinematic-border");
     setTimeout(() => {
       loadingScreen.style.display = "none";
       mainScreen.style.display = "block";
     }, 1200); // 1.5 secs
+    mainScreen.style.opacity = 1;
   }, 1200); // 3000 milliseconds (3 seconds)
 });

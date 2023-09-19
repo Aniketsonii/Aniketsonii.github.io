@@ -85,10 +85,13 @@ a:hover {
   text-align: center;
   opacity: 0;
 }
+.os-phrases h2{
+  top: 50%;
+  transform: translatey(-50%);
+}
 
 .os-phrases h2,
 .os-phrases h2 > span {
-  height: 100%;
   /* Centering with flexbox */
   display: -webkit-box;
   display: -moz-box;
