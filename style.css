@@ -641,3 +641,17 @@ ul:hover .my-button {
  
 
   /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- Footer End */
+
+  @media only screen and (max-width: 1024px) {
+    :root { 
+      width: 100%; 
+	    max-width: 1024px; /* or whatever width you want */ 
+    	margin-right: auto; 
+    	margin-left: auto; 
+    } 
+    .os-phrases h2 > span > span  {
+      font-weight: 700;
+      font-size: 100px;
+      text-align: center;
+    }
+  }
