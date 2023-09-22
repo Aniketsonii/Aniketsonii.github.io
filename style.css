@@ -256,6 +256,8 @@ ul:hover .my-button {
     text-align: start;
     font-size: 2rem;
     padding: 60px 20px 5px;
+    font-weight: 700;
+    text-shadow: -3px 3px rgba(0,0,0,0.4);
 }
 
 #AboutMe > .under-line{
@@ -278,6 +280,7 @@ ul:hover .my-button {
     justify-content: space-around;
     align-content: stretch;
     align-items: stretch;
+    font-weight: 500;
     gap: 20px;
     margin: 20px 40px 0px 40px;
 }
@@ -305,7 +308,6 @@ ul:hover .my-button {
 .projects {
     background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),url('images/IMG_1603.jpg');
     text-align: center;
-    font-weight: 700;
     letter-spacing: 2px;
     font-size: 2rem;
 }
@@ -319,6 +321,8 @@ ul:hover .my-button {
     text-align: start;
     font-size: 2rem;
     padding: 60px 20px 5px;
+    font-weight: 700;
+    text-shadow: -3px 3px rgba(0,0,0,0.4);
 }
 .project-tile{
     color: white;
@@ -416,6 +420,8 @@ ul:hover .my-button {
 #Photography > h4{text-align: start;
     font-size: 2rem;
     padding: 60px 20px 5px;
+    font-weight: 700;
+    text-shadow: -1px 1px rgba(0,0,0,0.4);
 }
 
 #Photography > .under-line {
@@ -438,6 +444,8 @@ ul:hover .my-button {
 #Contact > h4{text-align: start;
     font-size: 2rem;
     padding: 60px 20px 5px;
+    font-weight: 700;
+    text-shadow: -3px 3px rgba(0,0,0,0.4);
 }
 
 #Contact > .under-line {
@@ -633,3 +641,17 @@ ul:hover .my-button {
  
 
   /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- Footer End */
+
+  @media only screen and (max-width: 1024px) {
+    :root { 
+      width: 100%; 
+	    max-width: 1024px; /* or whatever width you want */ 
+    	margin-right: auto; 
+    	margin-left: auto; 
+    } 
+    .os-phrases h2 > span > span  {
+      font-weight: 700;
+      font-size: 100px;
+      text-align: center;
+    }
+  }
