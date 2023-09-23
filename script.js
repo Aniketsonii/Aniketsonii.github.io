@@ -33,17 +33,24 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (
+  const header = document.querySelector(".header");
+  const isMobileScreen = window.matchMedia("(max-width: 425px)").matches;
+
+  if (isMobileScreen) {
+    header.style.visibility = "hidden";
+    header.style.opacity = "0";
+    header.style.transition = "opacity 0.5s ease-out";
+  } else if (
     document.body.scrollTop > 500 ||
     document.documentElement.scrollTop > 500
   ) {
-    document.getElementById("header").style.visibility = "visible";
-    document.getElementById("header").style.opacity = "1";
-    document.getElementById("header").style.transition = "opacity 0.5s ease-in";
+    header.style.visibility = "visible";
+    header.style.opacity = "1";
+    header.style.transition = "opacity 0.5s ease-in";
   } else {
-    document.getElementById("header").style.visibility = "hidden";
-    document.getElementById("header").style.opacity = "0";
-    document.getElementById("header").style.transition = "opacity 0.5s ease-out";
+    header.style.visibility = "hidden";
+    header.style.opacity = "0";
+    header.style.transition = "opacity 0.5s ease-out";
   }
 }
 
