@@ -862,7 +862,7 @@ ul:hover .my-button {
   }
 
   button {
-    width: 75px;
+    width: 85px;
     height: 25px;
     font-size: 11px;
   }
@@ -874,6 +874,7 @@ ul:hover .my-button {
 
   .my-button {
     font-size: small;
+    font-weight: 600;
   }
 
   #header .aniket {
@@ -907,12 +908,12 @@ ul:hover .my-button {
 
   .item1,
   .item3 {
-    grid-column: 1/2;
+    grid-column: 1/4;
   }
 
   .item2,
   .item4 {
-    grid-column: 2/4;
+    grid-column: 1/4;
   }
 
   #Projects>h4 {
@@ -920,18 +921,26 @@ ul:hover .my-button {
     padding: 60px 35px 5px;
   }
 
+  #Projects>.under-line {
+    width: 250px
+  }
+
+  #Projects > .flex{
+    margin: 20px 40px 0px 40px;
+  }
+
   .project-tile {
     width: fit-content;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 1fr;
   }
 
   .project-tile .project-img {
-    width: 90%;
-    height: auto;
+   display: none;
   }
 
   .project-tile p {
-    font-size: 48%;
+    font-size: 15px;
+    text-align: left;
   }
 
   .project-tile .btns a {
@@ -940,17 +949,20 @@ ul:hover .my-button {
   }
 
   .tile-child1 {
-    font-size: 85%;
+    font-size: 21.24px;
   }
-
 
   #Photography>h4 {
     font-size: 160%;
     padding: 60px 35px 5px;
   }
 
+  #Photography>.under-line {
+    width: 250px
+  }
+
   #Photography>.content {
-    padding: 60px 280px;
+    padding: 35px 85px;
   }
 
   #Contact>h4 {
@@ -958,8 +970,12 @@ ul:hover .my-button {
     padding: 60px 35px 5px;
   }
 
+  #Contact>.under-line {
+    width: 250px
+  }
+
   #contact-form {
-    width: 50%;
+    width: 80%;
   }
 
   .links>ul {
@@ -975,4 +991,156 @@ ul:hover .my-button {
   .bg-image{
     background-attachment: inherit;
   }
+  .cinematic-border {
+    position: relative;
+    border-top: none;
+    min-height: 100vh;
+    border-bottom: none;
+    opacity: 1;
+    transition: opacity ease-in-out 700ms;
+  }
+
+  .bg-image{
+    background-attachment: inherit;
+  }
+
+  .center {
+    top: 65%;
+  }
+
+  .os-phrases h2>span>span {
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .os-phrases h2>span {
+    margin: 0 5px;
+  }
+
+  button {
+    width: 85px;
+    height: 25px;
+    font-size: 11px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .my-button {
+    font-size: small;
+    font-weight: 600;
+  }
+
+  #header .aniket {
+    font-size: 160%;
+  }
+
+  .aniket-tag {
+    font-size: small;
+  }
+
+  #AboutMe>h4 {
+    font-size: 160%;
+    padding: 60px 35px 5px;
+  }
+
+  #AboutMe>.under-line {
+    width: 250px
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-container>div {
+    font-size: 160%;
+  }
+
+  .item0 {
+    grid-column: 1/4;
+  }
+
+  .item1,
+  .item3 {
+    grid-column: 1/4;
+  }
+
+  .item2,
+  .item4 {
+    grid-column: 1/4;
+  }
+
+  #Projects>h4 {
+    font-size: 25.6px;
+    padding: 60px 35px 5px;
+  }
+
+  #Projects>.under-line {
+    width: 250px
+  }
+
+  #Projects > .flex{
+    margin: 20px 40px 0px 40px;
+  }
+
+  .project-tile {
+    width: fit-content;
+    grid-template-columns: 1fr;
+  }
+
+  .project-tile .project-img {
+   display: none;
+  }
+
+  .project-tile p {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .project-tile .btns a {
+    font-size: 50%;
+    width: 30%;
+  }
+
+  .tile-child1 {
+    font-size: 21.24px;
+  }
+
+  #Photography>h4 {
+    font-size: 160%;
+    padding: 60px 35px 5px;
+  }
+
+  #Photography>.under-line {
+    width: 250px
+  }
+
+  #Photography>.content {
+    padding: 35px 85px;
+  }
+
+  #Contact>h4 {
+    font-size: 160%;
+    padding: 60px 35px 5px;
+  }
+
+  #Contact>.under-line {
+    width: 250px
+  }
+
+  #contact-form {
+    width: 80%;
+  }
+
+  .links>ul {
+    font-size: inherit;
+  }
+
+  h1 {
+    font-size: inherit;
+  }
+
 }
