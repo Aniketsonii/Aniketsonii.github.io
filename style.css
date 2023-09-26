@@ -225,6 +225,7 @@ button span {
   height: 60px;
   font-size: xx-large;
   text-shadow: 4px 4px black;
+  text-wrap: nowrap;
 }
 
 #Welcome>.my-button {
@@ -852,7 +853,7 @@ ul:hover .my-button {
   }
 
   .os-phrases h2>span>span {
-    font-weight: 700;
+    font-weight: unset;
     font-size: 35px;
     text-align: center;
   }
@@ -867,13 +868,21 @@ ul:hover .my-button {
     font-size: 11px;
   }
 
+  h4{
+    font-size: 1.5rem;
+  }
+
+  h5{
+    font-size: 1.5rem;
+  }
+
   p {
     font-size: 15px;
     line-height: 26px;
   }
 
   .my-button {
-    font-size: small;
+    font-size: 0.6rem;
     font-weight: 600;
   }
 
@@ -896,6 +905,7 @@ ul:hover .my-button {
 
   .grid-container {
     grid-template-columns: 1fr 1fr;
+    margin: 20px 20px 20px 20px;
   }
 
   .grid-container>div {
@@ -926,7 +936,7 @@ ul:hover .my-button {
   }
 
   #Projects > .flex{
-    margin: 20px 40px 0px 40px;
+    margin: 20px;
   }
 
   .project-tile {
@@ -944,8 +954,8 @@ ul:hover .my-button {
   }
 
   .project-tile .btns a {
-    font-size: 50%;
-    width: 30%;
+    font-size: 0.7rem;
+    width: 40%;
   }
 
   .tile-child1 {
@@ -1000,6 +1010,14 @@ ul:hover .my-button {
     transition: opacity ease-in-out 700ms;
   }
 
+  h4{
+    font-size: 1.5rem;
+  }
+
+  h5{
+    font-size: 1.5rem;
+  }
+
   .bg-image{
     background-attachment: inherit;
   }
@@ -1009,28 +1027,32 @@ ul:hover .my-button {
   }
 
   .os-phrases h2>span>span {
-    font-weight: 700;
-    font-size: 35px;
+    font-weight: unset;
+    font-size: 25px;
     text-align: center;
   }
 
   .os-phrases h2>span {
-    margin: 0 5px;
+    margin:unset;
+  }
+  .word1, .word2{
+    left: 10px;
+    position: relative;
   }
 
   button {
-    width: 85px;
+    width: 70px;
     height: 25px;
     font-size: 11px;
   }
 
   p {
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 26px;
   }
 
   .my-button {
-    font-size: small;
+    font-size: 0.6rem;
     font-weight: 600;
   }
 
@@ -1039,20 +1061,21 @@ ul:hover .my-button {
   }
 
   .aniket-tag {
-    font-size: small;
+    font-size: x-small;
   }
 
   #AboutMe>h4 {
-    font-size: 160%;
-    padding: 60px 35px 5px;
+    font-size: 1.4rem;
+    padding: 40px 20px 0px;
   }
 
   #AboutMe>.under-line {
-    width: 250px
+    width: 50%
   }
 
   .grid-container {
     grid-template-columns: 1fr 1fr;
+    margin: 20px 20px 20px 20px;
   }
 
   .grid-container>div {
@@ -1074,16 +1097,16 @@ ul:hover .my-button {
   }
 
   #Projects>h4 {
-    font-size: 25.6px;
-    padding: 60px 35px 5px;
+    font-size: 1.4rem;
+    padding: 40px 20px 0px;
   }
 
   #Projects>.under-line {
-    width: 250px
+    width: 56%
   }
 
   #Projects > .flex{
-    margin: 20px 40px 0px 40px;
+    margin: 0px 0px;
   }
 
   .project-tile {
@@ -1101,21 +1124,20 @@ ul:hover .my-button {
   }
 
   .project-tile .btns a {
-    font-size: 50%;
-    width: 30%;
+    display: none;
   }
 
   .tile-child1 {
-    font-size: 21.24px;
+    font-size: 60%;
   }
 
   #Photography>h4 {
-    font-size: 160%;
-    padding: 60px 35px 5px;
+    font-size: 1.4rem;
+    padding: 40px 20px 0px;
   }
 
   #Photography>.under-line {
-    width: 250px
+    width: 70%
   }
 
   #Photography>.content {
@@ -1123,16 +1145,16 @@ ul:hover .my-button {
   }
 
   #Contact>h4 {
-    font-size: 160%;
-    padding: 60px 35px 5px;
+    font-size: 1.4rem;
+    padding: 40px 20px 0px;
   }
 
   #Contact>.under-line {
-    width: 250px
+    width: 62%
   }
 
   #contact-form {
-    width: 80%;
+    width: 100%;
   }
 
   .links>ul {
