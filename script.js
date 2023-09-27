@@ -1,19 +1,4 @@
 
-// //loader function
-// const myElement = document.querySelector("#os-phrases > h2");
-// myElement.lettering("words");
-// myElement.style.opacity = 1;
-// Object.values(myElement.children)
-//   .map((i) => {
-//     i.lettering();
-//     return i;
-//   })
-//   .map((i) => {
-//     i.lettering();
-//     return i;
-//   });
-
-
 (function () {
   var i,
     e,
@@ -34,7 +19,7 @@ window.onscroll = function () {
 
 function scrollFunction() {
   const header = document.querySelector(".header");
-  const isMobileScreen = window.matchMedia("(max-width: 425px)").matches;
+  const isMobileScreen = window.matchMedia("(max-width: 480px)").matches;
 
   if (isMobileScreen) {
     header.style.visibility = "hidden";
@@ -57,11 +42,8 @@ function scrollFunction() {
 window.addEventListener("load", function () {
   const mainScreen = document.querySelector(".main");
   const cinematic = document.getElementById("cinematic");
-  // mainScreen.style.display = "block";
-  // Hide the loading screen when the page is fully loaded
   setTimeout(() => {
     const loadingScreen = document.querySelector(".loader-container");
-    // const cinematic_border = document.querySelector(".cinematic-border");
     document.querySelector(".os-phrases > h2").style.zIndex = 1
     loadingScreen.style.opacity = 0;
     cinematic.classList.remove("cinematic-border");

@@ -17,7 +17,7 @@
   transition: 0.2s;
   color: black;
   background-color: var(--purple);
-  font-size: medium;
+  font-size: 1rem;
   font-weight: 200;
   border: none;
   cursor: pointer;
@@ -70,7 +70,7 @@ h6 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.1rem;
   line-height: 25px;
   margin: 0px;
   /* text-align: start; */
@@ -123,7 +123,7 @@ button {
   box-sizing: border-box;
   color: #000000;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 0.8rem;
   margin: 0;
   opacity: 1;
   outline: 0;
@@ -179,13 +179,13 @@ button span {
   top: 4px;
   text-shadow: none;
   white-space: nowrap;
-  font-size: 200%;
+  font-size: 1.5rem;
   line-height: 30px;
 }
 
 #header .aniket::first-letter {
   color: rgb(255, 255, 255);
-  font-size: 150%;
+  font-size: 2rem;
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- Header end */
@@ -194,11 +194,11 @@ button span {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url('images/1st-section.jpeg');
 }
 
-.aniket::first-letter {
+/* .aniket::first-letter {
   color: #eee;
-  /* font-weight: 900 ; */
-  font-size: 170%;
-}
+  font-weight: 900 ;
+  font-size: 1rem;
+} */
 
 .aniket::after {
   content: "";
@@ -223,7 +223,7 @@ button span {
   color: rgb(253, 253, 253);
   font-weight: 300;
   height: 60px;
-  font-size: xx-large;
+  font-size: 2rem;
   text-shadow: 4px 4px black;
   text-wrap: nowrap;
 }
@@ -237,7 +237,7 @@ button span {
   background-color: var(--purple);
   width: 120px;
   height: 30px;
-  font-size: medium;
+  font-size: 1rem;
   font-weight: bold;
   border: none;
   cursor: pointer;
@@ -305,7 +305,7 @@ ul:hover .my-button {
   background-color: rgb(157 155 155 / 15%);
   color: rgb(255 255 255);
   text-align: center;
-  font-size: 30px;
+  font-size: 2rem;
   /* animation: border-animation 5s infinite linear; */
 }
 
@@ -508,7 +508,7 @@ ul:hover .my-button {
 }
 
 #contact-form legend {
-  font-size: 2em;
+  font-size: 1rem;
   font-weight: bold;
   margin-bottom: 20px;
   animation: slideInDown 1s ease;
@@ -552,7 +552,7 @@ ul:hover .my-button {
   margin-bottom: 15px;
   border: 1px solid var(--purple);
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 1rem;
   animation: slideInRight 1s ease;
   transition: border-color 0.3s ease;
 }
@@ -601,7 +601,7 @@ ul:hover .my-button {
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
   animation: slideInLeft 1s ease;
@@ -642,7 +642,7 @@ ul:hover .my-button {
 #contact-form .error-message {
   color: red;
   margin-top: 5px;
-  font-size: 12px;
+  font-size: 1rem;
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- Contact End */
@@ -652,17 +652,16 @@ ul:hover .my-button {
   background-color: rgba(0, 0, 0);
 }
 
+.links{
+  display: flex;
+}
+
 .links>ul {
   color: var(--purple);
   margin: 0;
   line-height: 2;
   list-style-type: none;
-  padding: 20px 80px;
-  font-size: larger;
-}
-
-.links>.sub-Link {
-  float: left;
+  font-size: 1rem;
 }
 
 .links>ul>li>a {
@@ -681,12 +680,12 @@ ul:hover .my-button {
     	margin-left: auto; 
     }  */
   .aniket-tag {
-    font-size: x-large;
+    /* font-size: 1rem; */
   }
 
   .os-phrases h2>span>span {
     font-weight: 700;
-    font-size: 100px;
+    /* font-size: 1rem; */
     text-align: center;
   }
 
@@ -720,34 +719,34 @@ ul:hover .my-button {
 @media only screen and (max-width: 768px) {
   button {
     width: 100px;
-    font-size: 11px;
+    /* font-size: 1rem; */
   }
 
   p {
-    font-size: 15px;
+    /* font-size: 1rem; */
     line-height: 26px;
   }
 
   .my-button {
-    font-size: small;
+    /* font-size: 1rem; */
   }
 
   #header .aniket {
-    font-size: 160%;
+    /* font-size: 1rem; */
   }
 
   .aniket-tag {
-    font-size: larger;
+    /* font-size: 1rem; */
   }
 
   .os-phrases h2>span>span {
     font-weight: 700;
-    font-size: 80px;
+    /* font-size: 1rem; */
     text-align: center;
   }
 
   #AboutMe>h4 {
-    font-size: 160%;
+    /* font-size: 1rem; */
     padding: 60px 35px 5px;
   }
 
@@ -760,7 +759,7 @@ ul:hover .my-button {
   }
 
   .grid-container>div {
-    font-size: 160%;
+    /* font-size: 1rem; */
   }
 
   .item0 {
@@ -778,7 +777,7 @@ ul:hover .my-button {
   }
 
   #Projects>h4 {
-    font-size: 25.6px;
+    /* font-size: 1rem; */
     padding: 60px 35px 5px;
   }
 
@@ -793,21 +792,21 @@ ul:hover .my-button {
   }
 
   .project-tile p {
-    font-size: 48%;
+    /* font-size: 1rem; */
   }
 
   .project-tile .btns a {
-    font-size: 50%;
+    /* font-size: 1rem; */
     width: 30%;
   }
 
   .tile-child1 {
-    font-size: 85%;
+    /* font-size: 1rem; */
   }
 
 
   #Photography>h4 {
-    font-size: 160%;
+    /* font-size: 1rem; */
     padding: 60px 35px 5px;
   }
 
@@ -816,7 +815,7 @@ ul:hover .my-button {
   }
 
   #Contact>h4 {
-    font-size: 160%;
+    /* font-size: 1rem; */
     padding: 60px 35px 5px;
   }
 
@@ -825,14 +824,145 @@ ul:hover .my-button {
   }
 
   .links>ul {
-    font-size: inherit;
+    /* font-size: 1rem; */
   }
 
   h1 {
-    font-size: inherit;
+    /* font-size: 1rem; */
   }
 }
+@media only screen and (max-width: 480px) {
 
+  .bg-image{
+    background-attachment: inherit;
+  }
+  .cinematic-border {
+    position: relative;
+    border-top: none;
+    min-height: 100vh;
+    border-bottom: none;
+    opacity: 1;
+    transition: opacity ease-in-out 700ms;
+  }
+
+  .bg-image{
+    background-attachment: inherit;
+  }
+
+  .center {
+    top: 65%;
+  }
+
+  h4{
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  h5{
+    font-size: 1.5rem;
+  }
+
+  .os-phrases h2>span>span {
+    font-weight: unset;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .os-phrases h2 > span {
+    margin: 0px;
+  }
+  .aniket-tag {
+    font-size: 1rem;
+  }
+  
+  .my-button {
+    width: 120px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 20px 20px 20px;
+  }
+
+
+  #AboutMe > h4{
+    font-size: 1.8rem;
+    padding: 60px 20px 5px;
+  }
+
+  .grid-container>div {
+    /* font-size: 1.5rem; */
+  }
+
+  .item0 {
+    grid-column: 1/4;
+  }
+
+  .item1,
+  .item3 {
+    grid-column: 1/4;
+  }
+
+  .item2,
+  .item4 {
+    grid-column: 1/4;
+  }
+
+  #Projects > h4{
+    font-size: 1.8rem;  
+  }
+
+  #Projects>.under-line {
+    width: 250px
+  }
+
+  #Projects > .flex{
+    margin: 20px;
+  }
+
+  .project-tile {
+    width: fit-content;
+    grid-template-columns: 1fr;
+  }
+
+  .project-tile .project-img {
+   display: none;
+  }
+
+  .project-tile p {
+    /* font-size: 1rem; */
+    text-align: left;
+  }
+
+  .project-tile .btns a {
+    /* font-size: 1rem; */
+    width: 40%;
+  }
+
+  .tile-child1 {
+    font-size: 1.5rem;
+  }
+
+  #Photography > h4{
+    font-size: 1.8rem;
+  }
+
+  #Contact > h4{
+    font-size: 1.8rem;
+  }
+
+  #Photography>.content {
+    padding: 60px 100px;
+  }
+
+  #contact-form {
+    width: 85%;
+  }
+}
 @media only screen and (max-width: 425px) {
 
   .cinematic-border {
@@ -854,18 +984,18 @@ ul:hover .my-button {
 
   .os-phrases h2>span>span {
     font-weight: unset;
-    font-size: 35px;
+    font-size: 2rem;
     text-align: center;
   }
 
   .os-phrases h2>span {
-    margin: 0 5px;
+    margin: 0px;
   }
 
   button {
     width: 85px;
     height: 25px;
-    font-size: 11px;
+    /* font-size: 1rem; */
   }
 
   h4{
@@ -877,25 +1007,25 @@ ul:hover .my-button {
   }
 
   p {
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 26px;
   }
 
   .my-button {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     font-weight: 600;
   }
 
   #header .aniket {
-    font-size: 160%;
+    /* font-size: 1rem; */
   }
 
   .aniket-tag {
-    font-size: smaller;
+    font-size: 0.75rem;
   }
 
   #AboutMe>h4 {
-    font-size: 160%;
+    font-size: 1.6rem;
     padding: 60px 35px 5px;
   }
 
@@ -909,7 +1039,7 @@ ul:hover .my-button {
   }
 
   .grid-container>div {
-    font-size: 160%;
+    /* font-size: 1.5rem; */
   }
 
   .item0 {
@@ -927,7 +1057,7 @@ ul:hover .my-button {
   }
 
   #Projects>h4 {
-    font-size: 25.6px;
+    font-size: 1.6rem;
     padding: 60px 35px 5px;
   }
 
@@ -949,21 +1079,21 @@ ul:hover .my-button {
   }
 
   .project-tile p {
-    font-size: 15px;
+    /* font-size: 1rem; */
     text-align: left;
   }
 
   .project-tile .btns a {
-    font-size: 0.7rem;
+    /* font-size: 1rem; */
     width: 40%;
   }
 
   .tile-child1 {
-    font-size: 21.24px;
+    font-size: 1.5rem;
   }
 
   #Photography>h4 {
-    font-size: 160%;
+    font-size: 1.6rem;
     padding: 60px 35px 5px;
   }
 
@@ -976,7 +1106,7 @@ ul:hover .my-button {
   }
 
   #Contact>h4 {
-    font-size: 160%;
+    font-size: 1.6rem;
     padding: 60px 35px 5px;
   }
 
@@ -988,12 +1118,8 @@ ul:hover .my-button {
     width: 80%;
   }
 
-  .links>ul {
-    font-size: inherit;
-  }
-
   h1 {
-    font-size: inherit;
+    font-size: 1rem;
   }
 }
 
@@ -1010,14 +1136,6 @@ ul:hover .my-button {
     transition: opacity ease-in-out 700ms;
   }
 
-  h4{
-    font-size: 1.5rem;
-  }
-
-  h5{
-    font-size: 1.5rem;
-  }
-
   .bg-image{
     background-attachment: inherit;
   }
@@ -1026,9 +1144,17 @@ ul:hover .my-button {
     top: 65%;
   }
 
+  h4{
+    /* font-size: 1rem; */
+  }
+
+  h5{
+    font-size: 1.5rem;
+  }
+
   .os-phrases h2>span>span {
     font-weight: unset;
-    font-size: 25px;
+    font-size: 1.4rem;
     text-align: center;
   }
 
@@ -1043,7 +1169,7 @@ ul:hover .my-button {
   button {
     width: 70px;
     height: 25px;
-    font-size: 11px;
+    /* font-size: 1rem; */
   }
 
   p {
@@ -1057,15 +1183,15 @@ ul:hover .my-button {
   }
 
   #header .aniket {
-    font-size: 160%;
+    /* font-size: 1rem; */
   }
 
   .aniket-tag {
-    font-size: x-small;
+    font-size: 0.6rem;
   }
 
   #AboutMe>h4 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     padding: 40px 20px 0px;
   }
 
@@ -1079,7 +1205,7 @@ ul:hover .my-button {
   }
 
   .grid-container>div {
-    font-size: 160%;
+    font-size: 1.5rem;
   }
 
   .item0 {
@@ -1097,7 +1223,7 @@ ul:hover .my-button {
   }
 
   #Projects>h4 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     padding: 40px 20px 0px;
   }
 
@@ -1119,7 +1245,7 @@ ul:hover .my-button {
   }
 
   .project-tile p {
-    font-size: 15px;
+    font-size: 1rem;
     text-align: left;
   }
 
@@ -1128,11 +1254,11 @@ ul:hover .my-button {
   }
 
   .tile-child1 {
-    font-size: 60%;
+    /* font-size: 1rem; */
   }
 
   #Photography>h4 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     padding: 40px 20px 0px;
   }
 
@@ -1145,7 +1271,7 @@ ul:hover .my-button {
   }
 
   #Contact>h4 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     padding: 40px 20px 0px;
   }
 
@@ -1157,12 +1283,8 @@ ul:hover .my-button {
     width: 100%;
   }
 
-  .links>ul {
-    font-size: inherit;
-  }
-
   h1 {
-    font-size: inherit;
+    font-size: 1rem;
   }
 
 }
