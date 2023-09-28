@@ -13,6 +13,9 @@
   min-height: 100vh;
 }
 
+.os-phrases h2>span>span {
+  font-weight: unset;
+}
 .my-button {
   transition: 0.2s;
   color: black;
@@ -56,6 +59,10 @@ h4 {
   color: var(--purple);
   /* border-bottom: 1px solid white; */
   padding: 20px 0px;
+}
+
+h1{
+  font-size: 1rem;
 }
 
 h5 {
@@ -652,8 +659,9 @@ ul:hover .my-button {
   background-color: rgba(0, 0, 0);
 }
 
-.links{
+.links {
   display: flex;
+  padding: 20px;
 }
 
 .links>ul {
@@ -680,15 +688,19 @@ ul:hover .my-button {
     	margin-left: auto; 
     }  */
   .aniket-tag {
-    /* font-size: 1rem; */
+      font-size: 2rem;
+      height: 45px;
   }
 
   .os-phrases h2>span>span {
-    font-weight: 700;
-    /* font-size: 1rem; */
+    font-weight: unset;
+    font-size: 8rem;
     text-align: center;
   }
 
+  h4,h5{
+    font-size: 1.6rem;
+  }
   .grid-container {
     grid-template-columns: 1fr 1fr;
   }
@@ -711,15 +723,38 @@ ul:hover .my-button {
     width: fit-content;
   }
 
+  #Photography>.content {
+    padding: 40px 55px;
+  }
+
   #contact-form {
     width: 50%;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .os-phrases h2>span>span {
+    font-weight: unset;
+    font-size: 6rem;
+    text-align: center;
+  }
 
+  .aniket-tag {
+    font-size: 1.6rem;
+  }
+
+}
 @media only screen and (max-width: 768px) {
-  button {
-    width: 100px;
-    /* font-size: 1rem; */
+  
+  button{
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  h4,h5{
+    font-size: 1.5rem;
   }
 
   p {
@@ -727,31 +762,31 @@ ul:hover .my-button {
     line-height: 26px;
   }
 
-  .my-button {
-    /* font-size: 1rem; */
-  }
-
   #header .aniket {
     /* font-size: 1rem; */
   }
 
   .aniket-tag {
-    /* font-size: 1rem; */
+    font-size: 1.5rem;
   }
-
   .os-phrases h2>span>span {
-    font-weight: 700;
-    /* font-size: 1rem; */
+    font-weight: unset;
+    font-size: 5rem;
     text-align: center;
   }
 
+  .my-button{
+    font-weight: 600;
+    width: 120px;
+  }
+
   #AboutMe>h4 {
-    /* font-size: 1rem; */
+    font-size: 2rem;
     padding: 60px 35px 5px;
   }
 
   #AboutMe>.under-line {
-    width: 250px
+    width: 40%
   }
 
   .grid-container {
@@ -776,8 +811,12 @@ ul:hover .my-button {
     grid-column: 2/4;
   }
 
+  #Projects>.under-line {
+    width: 40%
+  }
+
   #Projects>h4 {
-    /* font-size: 1rem; */
+    font-size: 2rem;
     padding: 60px 35px 5px;
   }
 
@@ -806,29 +845,38 @@ ul:hover .my-button {
 
 
   #Photography>h4 {
-    /* font-size: 1rem; */
+    font-size: 2rem;
     padding: 60px 35px 5px;
   }
 
   #Photography>.content {
-    padding: 60px 280px;
+    padding: 60px 40px;
+  }
+
+  #Photography>.under-line {
+    width: 40%
+  }
+
+  #Contact>.under-line {
+    width: 40%
   }
 
   #Contact>h4 {
-    /* font-size: 1rem; */
+    font-size: 2rem;
     padding: 60px 35px 5px;
   }
 
   #contact-form {
-    width: 50%;
+    width: 75%;
   }
 
-  .links>ul {
-    /* font-size: 1rem; */
+  .links {
+    display: flex;
+    padding: 20px;
   }
 
   h1 {
-    /* font-size: 1rem; */
+    font-size: 1rem;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1122,7 +1170,6 @@ ul:hover .my-button {
     font-size: 1rem;
   }
 }
-
 @media only screen and (max-width: 320px) {
   .bg-image{
     background-attachment: inherit;
