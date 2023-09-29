@@ -57,7 +57,6 @@ h4 {
   margin-block-end: 0;
   margin-block-start: 0;
   color: var(--purple);
-  /* border-bottom: 1px solid white; */
   padding: 20px 0px;
 }
 
@@ -80,19 +79,10 @@ p {
   font-size: 1.1rem;
   line-height: 25px;
   margin: 0px;
-  /* text-align: start; */
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- Header Start */
 
-/* #header {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  transition: none;
-  width: 100%;
-  z-index: 5;
-} */
 
 .header {
   position: fixed;
@@ -201,11 +191,6 @@ button span {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url('images/1st-section.jpeg');
 }
 
-/* .aniket::first-letter {
-  color: #eee;
-  font-weight: 900 ;
-  font-size: 1rem;
-} */
 
 .aniket::after {
   content: "";
@@ -215,15 +200,9 @@ button span {
   bottom: 0;
   text-align: center;
   width: 40%;
-  /* margin: 0 auto; */
   height: 2%;
   background-color: var(--purple);
 }
-
-/* #Welcome > div > .under-line{
-    width: 850px;
-    height: 5px;
-} */
 
 .aniket-tag {
   position: relative;
@@ -237,7 +216,6 @@ button span {
 
 #Welcome>.my-button {
   border-radius: 50px;
-  /* display: none; */
   transition: 0.2s;
   color: black;
   font-weight: 100;
@@ -249,17 +227,6 @@ button span {
   border: none;
   cursor: pointer;
 }
-
-/* li>a>.my-button {
-    display: none;
-}
-
-ul:hover .my-button {
-    display: inline-block;
-    /* left: -100px; */
-/* margin-top: 5px; */
-/* position: absolute; */
-/* } */
 
 .my-button:hover {
   color: var(--purple);
@@ -307,13 +274,10 @@ ul:hover .my-button {
 }
 
 .grid-container>div {
-  /* margin: 40px 40px -20px -20px;   */
-  /* border: 1px solid  rgba(255, 254, 254, 0.34); */
   background-color: rgb(157 155 155 / 15%);
   color: rgb(255 255 255);
   text-align: center;
   font-size: 2rem;
-  /* animation: border-animation 5s infinite linear; */
 }
 
 .item0 {
@@ -322,7 +286,6 @@ ul:hover .my-button {
   grid-template-columns: 10px;
   text-align: start !important;
   background-color: initial !important;
-  /* color: var(--purple) !important; */
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- About Me End */
@@ -355,7 +318,6 @@ ul:hover .my-button {
   min-width: 50%;
   margin: 10px 0px;
   padding: 20px;
-  /* border: 0.5px solid lightgrey; */
   border-radius: 5px;
   background-color: rgb(157 155 155 / 15%);
   display: grid;
@@ -375,7 +337,6 @@ ul:hover .my-button {
   border: 1px solid #eee;
   border-radius: 10px;
   filter: brightness(0.8);
-  /* box-shadow: 0.3em 0.3em 0.5em #eee; */
   display: block;
   width: 80%;
   height: 80%;
@@ -389,7 +350,6 @@ ul:hover .my-button {
 
 .tile-child1 {
   grid-area: child1;
-  /* color:var(--purple); */
 }
 
 .tile-child2 {
@@ -564,17 +524,6 @@ ul:hover .my-button {
   transition: border-color 0.3s ease;
 }
 
-/* @keyframes slideInRight {
-    0% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  } */
-
 #contact-form input[type="text"]:focus,
 #contact-form input[type="email"]:focus,
 #contact-form textarea:focus {
@@ -613,17 +562,6 @@ ul:hover .my-button {
   transition: background-color 0.3s ease;
   animation: slideInLeft 1s ease;
 }
-
-/* @keyframes slideInLeft {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  } */
 
 #contact-form input[type="submit"]:hover {
   background-color: rgba(255, 119, 0, 0.8);
@@ -681,12 +619,6 @@ ul:hover .my-button {
 
 @media only screen and (max-width: 1200px) {
 
-  /* :root { 
-      width: 100%; 
-	    max-width: 1024px;
-    	margin-right: auto; 
-    	margin-left: auto; 
-    }  */
   .aniket-tag {
       font-size: 2rem;
       height: 45px;
@@ -758,13 +690,9 @@ ul:hover .my-button {
   }
 
   p {
-    /* font-size: 1rem; */
     line-height: 26px;
   }
 
-  #header .aniket {
-    /* font-size: 1rem; */
-  }
 
   .aniket-tag {
     font-size: 1.5rem;
@@ -793,9 +721,6 @@ ul:hover .my-button {
     grid-template-columns: 1fr 1fr;
   }
 
-  .grid-container>div {
-    /* font-size: 1rem; */
-  }
 
   .item0 {
     grid-column: 1/4;
@@ -830,19 +755,10 @@ ul:hover .my-button {
     height: auto;
   }
 
-  .project-tile p {
-    /* font-size: 1rem; */
-  }
 
   .project-tile .btns a {
-    /* font-size: 1rem; */
     width: 30%;
   }
-
-  .tile-child1 {
-    /* font-size: 1rem; */
-  }
-
 
   #Photography>h4 {
     font-size: 2rem;
@@ -942,9 +858,6 @@ ul:hover .my-button {
     padding: 60px 20px 5px;
   }
 
-  .grid-container>div {
-    /* font-size: 1.5rem; */
-  }
 
   .item0 {
     grid-column: 1/4;
@@ -982,12 +895,10 @@ ul:hover .my-button {
   }
 
   .project-tile p {
-    /* font-size: 1rem; */
     text-align: left;
   }
 
   .project-tile .btns a {
-    /* font-size: 1rem; */
     width: 40%;
   }
 
@@ -1043,7 +954,6 @@ ul:hover .my-button {
   button {
     width: 85px;
     height: 25px;
-    /* font-size: 1rem; */
   }
 
   h4{
@@ -1086,10 +996,6 @@ ul:hover .my-button {
     margin: 20px 20px 20px 20px;
   }
 
-  .grid-container>div {
-    /* font-size: 1.5rem; */
-  }
-
   .item0 {
     grid-column: 1/4;
   }
@@ -1127,12 +1033,10 @@ ul:hover .my-button {
   }
 
   .project-tile p {
-    /* font-size: 1rem; */
     text-align: left;
   }
 
   .project-tile .btns a {
-    /* font-size: 1rem; */
     width: 40%;
   }
 
@@ -1191,10 +1095,6 @@ ul:hover .my-button {
     top: 65%;
   }
 
-  h4{
-    /* font-size: 1rem; */
-  }
-
   h5{
     font-size: 1.5rem;
   }
@@ -1216,7 +1116,6 @@ ul:hover .my-button {
   button {
     width: 70px;
     height: 25px;
-    /* font-size: 1rem; */
   }
 
   p {
@@ -1227,10 +1126,6 @@ ul:hover .my-button {
   .my-button {
     font-size: 0.6rem;
     font-weight: 600;
-  }
-
-  #header .aniket {
-    /* font-size: 1rem; */
   }
 
   .aniket-tag {
@@ -1298,10 +1193,6 @@ ul:hover .my-button {
 
   .project-tile .btns a {
     display: none;
-  }
-
-  .tile-child1 {
-    /* font-size: 1rem; */
   }
 
   #Photography>h4 {
