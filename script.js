@@ -1,19 +1,4 @@
 
-// //loader function
-// const myElement = document.querySelector("#os-phrases > h2");
-// myElement.lettering("words");
-// myElement.style.opacity = 1;
-// Object.values(myElement.children)
-//   .map((i) => {
-//     i.lettering();
-//     return i;
-//   })
-//   .map((i) => {
-//     i.lettering();
-//     return i;
-//   });
-
-
 (function () {
   var i,
     e,
@@ -33,28 +18,32 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (
+  const header = document.querySelector(".header");
+  const isMobileScreen = window.matchMedia("(max-width: 480px)").matches;
+
+  if (isMobileScreen) {
+    header.style.visibility = "hidden";
+    header.style.opacity = "0";
+    header.style.transition = "opacity 0.5s ease-out";
+  } else if (
     document.body.scrollTop > 500 ||
     document.documentElement.scrollTop > 500
   ) {
-    document.getElementById("header").style.visibility = "visible";
-    document.getElementById("header").style.opacity = "1";
-    document.getElementById("header").style.transition = "opacity 0.5s ease-in";
+    header.style.visibility = "visible";
+    header.style.opacity = "1";
+    header.style.transition = "opacity 0.5s ease-in";
   } else {
-    document.getElementById("header").style.visibility = "hidden";
-    document.getElementById("header").style.opacity = "0";
-    document.getElementById("header").style.transition = "opacity 0.5s ease-out";
+    header.style.visibility = "hidden";
+    header.style.opacity = "0";
+    header.style.transition = "opacity 0.5s ease-out";
   }
 }
 
 window.addEventListener("load", function () {
   const mainScreen = document.querySelector(".main");
   const cinematic = document.getElementById("cinematic");
-  // mainScreen.style.display = "block";
-  // Hide the loading screen when the page is fully loaded
   setTimeout(() => {
     const loadingScreen = document.querySelector(".loader-container");
-    // const cinematic_border = document.querySelector(".cinematic-border");
     document.querySelector(".os-phrases > h2").style.zIndex = 1
     loadingScreen.style.opacity = 0;
     cinematic.classList.remove("cinematic-border");
