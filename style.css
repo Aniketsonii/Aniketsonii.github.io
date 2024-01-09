@@ -207,10 +207,10 @@ button span {
 .aniket-tag {
   position: relative;
   color: rgb(253, 253, 253);
-  font-weight: 300;
+  font-weight: 500;
   height: 60px;
-  font-size: 2rem;
-  text-shadow: 4px 4px black;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px black;
   text-wrap: nowrap;
 }
 
@@ -620,7 +620,7 @@ button span {
 @media only screen and (max-width: 1200px) {
 
   .aniket-tag {
-      font-size: 2rem;
+      font-size: 4rem;
       height: 45px;
   }
 
