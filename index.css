@@ -1,7 +1,7 @@
 :root{
   font-family: 'Raleway';
   scroll-behavior: smooth;
-  --purple: rgb(130, 0, 217);
+  --purple: #2cc4ff;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url('images/1st-section.jpeg');
   background-attachment: fixed;

@@ -3,6 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="./loader.css">
+  <link rel="stylesheet" href="./header.css">
   <style>
     .loader-container {
       display: block;
@@ -100,10 +101,10 @@
         <path id="wave-pattern" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
       </defs>
       <g class="animated-waves">
-        <use href="#wave-pattern" x="48" y="0" fill="rgba(21,0,36,0.6)"></use>
-        <use href="#wave-pattern" x="48" y="3" fill="rgba(21,0,36,0.5)"></use>
-        <use href="#wave-pattern" x="48" y="5" fill="rgba(21,0,36,0.3)"></use>
-        <use href="#wave-pattern" x="48" y="7" fill="rgba(21,0,36,0.3)"></use>
+        <use href="#wave-pattern" x="48" y="0" fill="#2cc4ff65"></use>
+        <use href="#wave-pattern" x="48" y="3" fill="#2cc4ff50"></use>
+        <use href="#wave-pattern" x="48" y="5" fill="#2cc4ff30"></use>
+        <use href="#wave-pattern" x="48" y="7" fill="#2cc4ff30"></use>
       </g>
     </svg>
   </div>
@@ -120,10 +121,10 @@
           <span class="char6">T</span>
         </span>
         <span class="word2">
-          <span class="char1">S</span>
-          <span class="char2">O</span>
-          <span class="char3">N</span>
-          <span class="char4">I</span>
+          <span class="char1" style="color: #2cc4ff; text-shadow: 0 0 50px #2cc4ff;">S</span>
+          <span class="char2" style="color: #2cc4ff; text-shadow: 0 0 50px #2cc4ff;">O</span>
+          <span class="char3" style="color: #2cc4ff; text-shadow: 0 0 50px #2cc4ff;">N</span>
+          <span class="char4" style="color: #2cc4ff; text-shadow: 0 0 50px #2cc4ff;">I</span>
         </span>
       </h2>
     </div>
@@ -135,21 +136,66 @@
           ANIKET SONI
         </div>
         <div class="navbar-right">
-          <div class="button-group">
-            <a href="#Welcome"><button><span class="text">Welcome</span></button></a>
-            <a href="#AboutMe"><button><span class="text">About Me</span></button></a>
-            <a href="#Projects"><button><span class="text">Projects</span></button></a>
-            <a href="#Photography"><button><span class="text">Photography</span></button></a>
-            <a href="#Contact"><button><span class="text">Contact Me</span></button></a>
+          <div class="button-group innerflex">
+            <a href="#Welcome"><button class="innerflex"><span class="text">Welcome</span></button></a>
+            <a href="#AboutMe"><button class="innerflex"><span class="text">About Me</span></button></a>
+            <a href="#Projects"><button class="innerflex"><span class="text">Projects</span></button></a>
+            <a href="#Photography"><button class="innerflex"><span class="text">Photography</span></button></a>
+            <a href="#Contact"><button class="innerflex"><span class="text">Contact Me</span></button></a>
           </div>
         </div>
       </nav>
+      <div class="headerwave">
+        <div>
+          <svg
+            class="waves"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g class="parallax">
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="0"
+                fill="#2cc4ff95"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="3"
+                fill="#2cc4ff85"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="5"
+                fill="#2cc4ff75"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="7"
+                fill="#2cc4ff70"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
     </section>
     <section id="Welcome" class="bg-image">
       <div class="center">
         <!-- <h6 style="visibility: hidden;" class="aniket">a</h6> -->
         <h6 class="aniket-tag">Creating Code / Capturing Moments / Exploring the World</h6>
-        <a href="#AboutMe"><button class="my-button">About Me</button></a>
+        <a href="#AboutMe"><button style="background-color: #2cc4ff;"><span class="text">About Me</span></button></a>
       </div>
     </section>
     <section id="AboutMe" class="aboutMe bg-image">
