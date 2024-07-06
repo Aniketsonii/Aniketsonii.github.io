@@ -64,7 +64,7 @@
   }
   /*Shrinking for mobile*/
   @media (max-width: 768px) {
-    .waves {
+    .innerwaves {
       height:40px;
       min-height:40px;
     }
