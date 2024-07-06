@@ -194,51 +194,51 @@ a:hover {
 
 @-webkit-keyframes OpeningSequenceWord1 {
   0% {
-    text-shadow: 0 0 50px #fff;
+    text-shadow: 0 0 350px #fff;
     letter-spacing: 80px;
-    opacity: 0;
-    -webkit-transform: rotateY(-90deg);
+    opacity: 0.2;
+    transform: rotateY(-90deg);
   }
   50% {
-    text-shadow: 0 0 1px #fff;
+    text-shadow: 0 0 350px #fff;
     letter-spacing: 14px;
     opacity: 0.9;
-    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
   85% {
-    text-shadow: 0 0 1px #fff;
+    text-shadow: 0 0 350px #fff;
     opacity: 1;
-    -webkit-transform: rotateY(0deg) translateZ(100px);
+    transform: rotateY(0deg) translateZ(100px);
   }
   100% {
-    text-shadow: 0 0 1px #fff;
+    text-shadow: 0 0 350px #fff;
     opacity: 1;
-    -webkit-transform: translateZ(130px);
+    transform: translateZ(130px);
     pointer-events: none;
   }
 }
 @-moz-keyframes OpeningSequenceWord1 {
   0% {
-    text-shadow: 0 0 50px #fff;
+    text-shadow: 0 0 350px #fff;
     letter-spacing: 80px;
     opacity: 0.2;
-    -moz-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
   }
   50% {
-    text-shadow: 0 0 1px #fff;
+    text-shadow: 0 0 350px #fff;
     letter-spacing: 14px;
     opacity: 0.9;
-    -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
   85% {
-    text-shadow: 0 0 1px #fff;
+    text-shadow: 0 0 350px #fff;
     opacity: 1;
-    -moz-transform: rotateY(0deg) translateZ(100px);
+    transform: rotateY(0deg) translateZ(100px);
   }
   100% {
-    text-shadow: 0 0 1px #fff;
+    text-shadow: 0 0 350px #fff;
     opacity: 1;
-    -moz-transform: translateZ(130px);
+    transform: translateZ(130px);
     pointer-events: none;
   }
 }
@@ -272,51 +272,51 @@ a:hover {
 /* -------------------------------- op2 */
 @-webkit-keyframes OpeningSequenceWord2 {
   0% {
-    text-shadow: 0 0 50px #7c3aed;
+    text-shadow: 0 0 350px #7c3aed;
     letter-spacing: 80px;
-    opacity: 0;
-    -webkit-transform: rotateY(-90deg);
+    opacity: 0.2;
+    transform: rotateY(-90deg);
   }
   50% {
-    text-shadow: 0 0 50px #7c3aed;
+    text-shadow: 0 0 355px #7c3aed;
     letter-spacing: 14px;
     opacity: 0.9;
-    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
   85% {
-    text-shadow: 0 0 50px #7c3aed;
+    text-shadow: 0 0 350px #7c3aed;
     opacity: 1;
-    -webkit-transform: rotateY(0deg) translateZ(100px);
+    transform: rotateY(0deg) translateZ(100px);
   }
   100% {
-    text-shadow: 0 0 50px #fff;
+    text-shadow: 0px 0px 500px #7c3aed;
     opacity: 1;
-    -webkit-transform: translateZ(130px);
+    transform: translateZ(130px);
     pointer-events: none;
   }
 }
 @-moz-keyframes OpeningSequenceWord2 {
   0% {
-    text-shadow: 0 0 50px #7c3aed;
+    text-shadow: 0 0 350px #7c3aed;
     letter-spacing: 80px;
     opacity: 0.2;
-    -moz-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
   }
   50% {
-    text-shadow: 0 0 50px #7c3aed;
+    text-shadow: 0 0 355px #7c3aed;
     letter-spacing: 14px;
     opacity: 0.9;
-    -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
   85% {
-    text-shadow: 0 0 50px #7c3aed;
+    text-shadow: 0 0 350px #7c3aed;
     opacity: 1;
-    -moz-transform: rotateY(0deg) translateZ(100px);
+    transform: rotateY(0deg) translateZ(100px);
   }
   100% {
-    text-shadow: 0 0 50px #fff;
+    text-shadow: 0px 0px 500px #7c3aed;
     opacity: 1;
-    -moz-transform: translateZ(130px);
+    transform: translateZ(130px);
     pointer-events: none;
   }
 }
