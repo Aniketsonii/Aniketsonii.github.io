@@ -3,6 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="./loader.css">
+  <link rel="stylesheet" href="./header.css">
   <style>
     .loader-container {
       display: block;
@@ -82,7 +83,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aniket Soni | Portfolio</title>
+  <title>Aniket Soni | WEBSITE</title>
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -100,10 +101,10 @@
         <path id="wave-pattern" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
       </defs>
       <g class="animated-waves">
-        <use href="#wave-pattern" x="48" y="0" fill="rgba(21,0,36,0.6)"></use>
-        <use href="#wave-pattern" x="48" y="3" fill="rgba(21,0,36,0.5)"></use>
-        <use href="#wave-pattern" x="48" y="5" fill="rgba(21,0,36,0.3)"></use>
-        <use href="#wave-pattern" x="48" y="7" fill="rgba(21,0,36,0.3)"></use>
+        <use href="#wave-pattern" x="48" y="0" fill="#2c1057"></use>
+        <use href="#wave-pattern" x="48" y="3" fill="#411882"></use>
+        <use href="#wave-pattern" x="48" y="5" fill="#4c1c98"></use>
+        <use href="#wave-pattern" x="48" y="7" fill="#5720ae"></use>
       </g>
     </svg>
   </div>
@@ -120,10 +121,10 @@
           <span class="char6">T</span>
         </span>
         <span class="word2">
-          <span class="char1">S</span>
-          <span class="char2">O</span>
-          <span class="char3">N</span>
-          <span class="char4">I</span>
+          <span class="char1" style="color: #7c3aed;">S</span>
+          <span class="char2" style="color: #7c3aed;">O</span>
+          <span class="char3" style="color: #7c3aed;">N</span>
+          <span class="char4" style="color: #7c3aed;">I</span>
         </span>
       </h2>
     </div>
@@ -135,21 +136,37 @@
           ANIKET SONI
         </div>
         <div class="navbar-right">
-          <div class="button-group">
-            <a href="#Welcome"><button><span class="text">Welcome</span></button></a>
-            <a href="#AboutMe"><button><span class="text">About Me</span></button></a>
-            <a href="#Projects"><button><span class="text">Projects</span></button></a>
-            <a href="#Photography"><button><span class="text">Photography</span></button></a>
-            <a href="#Contact"><button><span class="text">Contact Me</span></button></a>
+          <div class="button-group innerflex">
+            <a href="#Welcome"><button class="innerflex"><span class="text">Welcome</span></button></a>
+            <a href="#AboutMe"><button class="innerflex"><span class="text">About Me</span></button></a>
+            <a href="#Projects"><button class="innerflex"><span class="text">Projects</span></button></a>
+            <a href="#Photography"><button class="innerflex"><span class="text">Photography</span></button></a>
+            <a href="#Contact"><button class="innerflex"><span class="text">Contact Me</span></button></a>
           </div>
         </div>
       </nav>
+      <div class="headerwave">
+        <div>
+          <svg class="innerwaves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 28 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+              <use xlink:href="#gentle-wave" x="48" y="0" fill="#2c1057" />
+              <use xlink:href="#gentle-wave" x="48" y="3" fill="#411882" />
+              <use xlink:href="#gentle-wave" x="48" y="5" fill="#4c1c98" />
+              <use xlink:href="#gentle-wave" style="height: 100px;" x="48" y="7" fill="#5720ae" />
+            </g>
+          </svg>
+        </div>
+      </div>
     </section>
     <section id="Welcome" class="bg-image">
       <div class="center">
         <!-- <h6 style="visibility: hidden;" class="aniket">a</h6> -->
-        <h6 class="aniket-tag">I'M PROGRAMMER / DEVELOPER / ETHICAL HACKER</h6>
-        <a href="#AboutMe"><button class="my-button">About Me</button></a>
+        <h6 class="aniket-tag">Creating Code / Capturing Moments / Exploring the World</h6>
+        <a href="#AboutMe"><button style="background-color: #7c3aed;"><span class="text">About Me</span></button></a>
       </div>
     </section>
     <section id="AboutMe" class="aboutMe bg-image">
@@ -214,40 +231,34 @@
       <div class="under-line"></div>
       <div class="flex">
         <div class="project-tile">
-          <h5 class="tile-child1">Car Price Prediction<div class="under-line"></div>
+          <h5 class="tile-child1">Valyrian Safe<div class="under-line"></div>
           </h5>
-          <img class="project-img tile-child2" src="/images/car-price.jpeg" alt="Ecommerce Website project snapshot">
+          <img class="project-img tile-child2" src="https://images.pexels.com/photos/39584/censorship-limitations-freedom-of-expression-restricted-39584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Ecommerce Website project snapshot">
           <p class="tile-child3">
-
-            Our car price prediction ML assignment employs linear regression to develop an accurate model that estimates
-            vehicle prices based on relevant features and historical data, enabling users to make informed decisions in
-            the automotive market.
+            A Password Manager project focuses on developing a secure software tool to store and manage user passwords and other sensitive login information. It offers a convenient and organized way for users to store, generate, and autofill passwords for various accounts.
           </p>
           <div class="btns tile-child4">
-            <a href="https://projectsapp-46.web.app" target="_blank">Demo</a>
-            <a href="https://github.com/Aniketsonii/Car-Price-Prediction" target="_blank">Github</a>
-            <a href="" target="_blank">Code</a>
+            <a href="https://valyriansafe.onrender.com" target="_blank">Demo</a>
           </div>
         </div>
         <div class="project-tile">
           <h5 class="tile-child1">License Plate Detection<div class="under-line"></div>
           </h5>
-          <img class="project-img tile-child2" src="/images/1.png" alt="Ecommerce Website project snapshot">
+          <img class="project-img tile-child2" src="/images/1.png" alt="License Plate Detection project snapshot">
           <p class="tile-child3">
             License Plate Detection Methods Based on OpenCV explores the use of OpenCV to implement robust techniques
             for identifying and localizing license plates in images, enabling various applications in traffic
             management, security systems.
           </p>
           <div class="btns tile-child4">
-            <a href="https://projectsapp-46.web.app/" target="_blank">Demo</a>
-            <a href="https://github.com/Aniketsonii/Car-Price-Prediction" target="_blank">Github</a>
-            <a href="  " target="_blank">Code</a>
+            <a href="https://westeros-watch.web.app" target="_blank">Demo</a>
+            <a href="https://github.com/Aniketsonii/License_Plate_Detection" target="_blank">Github</a>
           </div>
         </div>
         <div class="project-tile">
           <h5 class="tile-child1">Car Price Prediction<div class="under-line"></div>
           </h5>
-          <img class="project-img tile-child2" src="/images/car-price.jpeg" alt="Ecommerce Website project snapshot">
+          <img class="project-img tile-child2" src="/images/car-price.jpeg" alt="Car Price Prediction project snapshot">
           <p class="tile-child3">
 
             Our car price prediction ML assignment employs linear regression to develop an accurate model that estimates
@@ -255,25 +266,36 @@
             the automotive market.
           </p>
           <div class="btns tile-child4">
-            <a href="https://projectsapp-46.web.app/" target="_blank">Demo</a>
+            <a href="https://projectapp-as.web.app/" target="_blank">Demo</a>
             <a href="https://github.com/Aniketsonii/Car-Price-Prediction" target="_blank">Github</a>
-            <a href="  " target="_blank">Code</a>
           </div>
         </div>
         <div class="project-tile">
-          <h5 class="tile-child1">Car Price Prediction<div class="under-line"></div>
+          <h5 class="tile-child1">Flight Fare Prediction<div class="under-lineline"></div>
           </h5>
-          <img class="project-img tile-child2" src="/images/car-price.jpeg" alt="Ecommerce Website project snapshot">
+          <img class="project-img tile-child2" src="/images/flight-fair.jpg" alt="Car Price Prediction project snapshot">
           <p class="tile-child3">
-
-            Our car price prediction ML assignment employs linear regression to develop an accurate model that estimates
-            vehicle prices based on relevant features and historical data, enabling users to make informed decisions in
-            the automotive market.
+            The Flight Fare Prediction project aims to develop a predictive model that estimates airfare prices for 
+            different flights. This model uses historical flight data and relevant features to help users make informed 
+            decisions when booking flights.
           </p>
           <div class="btns tile-child4">
-            <a href="https://projectsapp-46.web.app/" target="_blank">Demo</a>
-            <a href="https://github.com/Aniketsonii/Car-Price-Prediction" target="_blank">Github</a>
-            <a href="  " target="_blank">Code</a>
+            <a href="https://projectapp-as.web.app/Flightfareprediction" target="_blank">Demo</a>
+            <a href="https://github.com/Aniketsonii/Flight-Fare" target="_blank">Github</a>
+          </div>
+        </div>
+        <div class="project-tile">
+          <h5 class="tile-child1">Influx<div class="under-line"></div>
+          </h5>
+          <img class="project-img tile-child2" src="https://images.pexels.com/photos/39584/censorship-limitations-freedom-of-expression-restricted-39584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Ecommerce Website project snapshot">
+          <p class="tile-child3">
+            Influx is a peer-to-peer live video calling service built with React for frontend development and Spring
+            Boot for backend infrastructure. It leverages PostgreSQL for database management and integrates
+            dyte.io for enhanced video communication features.
+          </p>
+          <div class="btns tile-child4">
+            <a href="http://ec2-13-234-119-208.ap-south-1.compute.amazonaws.com/" target="_blank">Demo</a>
+            <a href="https://github.com/aadarshp31/influx" target="_blank">Github</a>
           </div>
         </div>
       </div>
