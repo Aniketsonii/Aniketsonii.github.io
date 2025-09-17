@@ -50,7 +50,7 @@ window.addEventListener("load", function () {
     setTimeout(() => {
       loadingScreen.style.display = "none";
       mainScreen.style.display = "block";
-    }, 1200); // 1.5 secs
+    },50); // 1.5 secs
     mainScreen.style.opacity = 1;
-  }, 1200); // 3000 milliseconds (3 seconds)
+  }, 3000); // 3000 milliseconds (3 seconds)
 });
