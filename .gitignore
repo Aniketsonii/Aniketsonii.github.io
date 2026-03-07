@@ -20,3 +20,6 @@ Thumbs.db
 
 # Build cache
 .tailwindcss-cache/
+
+# Cache files
+.cache/
